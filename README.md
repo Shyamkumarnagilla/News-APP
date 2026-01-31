@@ -22,7 +22,7 @@ Newsly is a modern, responsive Single Page Application (SPA) built with React th
 
 ##  Tech Stack
 
--   **Frontend:** React.js, CSS(Custom Modules/Flexbox)
+-   **Frontend:** React.js 
 -   **Styling:** CSS3 (Custom Modules/Flexbox)
 -   **API Integration:** Fetch API / Axios
 -   **External API:** [NewsData.io](https://newsdata.io/)
