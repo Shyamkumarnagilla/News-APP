@@ -1,5 +1,5 @@
 body {
-  background: #FCF5EE;
+  background: #F9FAFB;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -18,7 +18,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-color: #FFC4C4;
+  background-color: #111827;
   padding: 2px;
 }
 
@@ -28,7 +28,7 @@ nav input {
   font-size: 18px;
   border: none;
   border-radius: 20px;
-  background-color: #FCF5EE;
+  background-color: #F9FAFB;
 }
 
 .searchBar {
@@ -40,7 +40,7 @@ nav input {
 nav button {
   width: 70px;
   height: 38px;
-  background-color: #EE6983;
+  background-color: #4d73db;
   border: none;
   border-radius: 20px;
   color: white;
@@ -49,8 +49,12 @@ nav button {
 }
 
 nav button:hover {
-  background-color: #850E35;
+  background-color: #1E40AF;
   transition: 0.3s;
+}
+
+nav h1 {
+  color: white;
 }
 
 /* Category Buttons */
@@ -63,7 +67,7 @@ nav button:hover {
 }
 
 .categoryBtn .button {
-  background-color: #EE6983;
+  background-color: #4d73db;
   width: 130px;
   height: 33px;
   border-radius: 16px;
@@ -75,7 +79,7 @@ nav button:hover {
 }
 
 .categoryBtn .button:hover {
-  background-color: #850E35;
+  background-color: #1E40AF;
   transition: 0.3s;
 }
 
@@ -99,13 +103,19 @@ nav button:hover {
 
 .card {
   width: 320px;
-  height: auto;
-  background-color: #fcd4d4;
+  height: 520px;
+  background-color: #FFFFFF;
   border-radius: 20px;
   border: 1px solid rgb(236, 236, 236);
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  opacity: 0;
+  transition: opacity 0.6s ease-in;
+}
+
+.card.visible {
+  opacity: 1;
 }
 
 .card img {
@@ -117,6 +127,9 @@ nav button:hover {
 
 .card .content {
   padding: 10px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
 .card .title {
@@ -134,10 +147,15 @@ nav button:hover {
   margin: 10px 0;
   font-size: 14px;
   color: #333;
+  flex: 1;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
 }
 
 .card button {
-  background-color: #EE6983;
+  background-color: #4d73db;
   border: none;
   cursor: pointer;
   width: 90px;
@@ -145,10 +163,12 @@ nav button:hover {
   color: white;
   font-size: 12px;
   border-radius: 20px;
+  margin-top: auto;
+  align-self: flex-start;
 }
 
 .card button:hover {
-  background-color: #850E35;
+  background-color: #1E40AF;
   transition: 0.3s;
 }
 

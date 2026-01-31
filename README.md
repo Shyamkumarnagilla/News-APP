@@ -1,70 +1,78 @@
-# Getting Started with Create React App
+#  Newsly – Real-Time News Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://javascript.info/)
+[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
+[![REST API](https://img.shields.io/badge/REST%20API-005571?style=for-the-badge&logo=google-cloud&logoColor=white)](https://newsdata.io/)
 
-## Available Scripts
+**🔗 View Live Project:** [https://shyamkumarnagilla.github.io/News-APP/](https://shyamkumarnagilla.github.io/News-APP/)
+</div>
 
-In the project directory, you can run:
+---
+Newsly is a modern, responsive Single Page Application (SPA) built with React that delivers real-time news headlines from across the globe. By integrating with the **NewsData.io API**, it allows users to stay updated with the latest stories across various categories.
 
-### `npm start`
+##  Key Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+-   **Real-Time Data:** Fetches the latest global headlines instantly using REST API.
+-   **Category Filtering:** Browse news by categories such as Business, Technology, Sports, Health, and Entertainment.
+-   **Robust Search:** Quickly find specific news stories using a built-in search functionality.
+-   **Responsive Design:** Fully optimized for desktops, tablets, and mobile devices.
+-   **Infinite Scroll/Pagination:** Seamlessly navigate through multiple pages of news articles.
+-   **Detailed View:** Clickable cards that redirect users to the full source article.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+##  Tech Stack
 
-### `npm test`
+-   **Frontend:** React.js, CSS(Custom Modules/Flexbox)
+-   **Styling:** CSS3 (Custom Modules/Flexbox)
+-   **API Integration:** Fetch API / Axios
+-   **External API:** [NewsData.io](https://newsdata.io/)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installation & Setup
 
-### `npm run build`
+Follow these steps to run the project locally:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1.  **Clone the Repository:**
+    ```bash
+    git clone [https://github.com/Shyamkumarnagilla/News-APP.git](https://github.com/Shyamkumarnagilla/News-APP.git)
+    cd News-APP
+    ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2.  **Install Dependencies:**
+    ```bash
+    npm install
+    ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3.  **Get your API Key:**
+    -   Sign up at [NewsData.io](https://newsdata.io/) to get a free API key.
+    -   Create a `.env` file in the root directory.
+    -   Add your key: `REACT_APP_NEWS_API_KEY=your_key_here`
 
-### `npm run eject`
+4.  **Start the Application:**
+    ```bash
+    npm start
+    ```
+    The app will be available at `http://localhost:3000`.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Project Structure
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```text
+├── public/
+├── src/
+│   ├── components/       # Reusable UI components (Navbar, Footer, NewsItem)
+│   ├── pages/            # Main views (Home, Category pages)
+│   ├── App.js            # Main application component
+│   ├── index.js          # Entry point
+│   └── styles/           # Global and component-specific CSS
+├── .env                  # Environment variables (API Key)
+└── package.json          # Project dependencies
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Contact
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+**Shyam Kumar Nagilla**
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* **GitHub:** https://github.com/Shyamkumarnagilla
+* **LinkedIn:** https://www.linkedin.com/in/nagilla-shyam
+* **Email:** nagillashyamkumar7@gmail.com
+---
+*If you liked this project, feel free to give it a star!*
