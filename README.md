@@ -8,6 +8,10 @@
 **🔗 View Live Project:** [https://shyamkumarnagilla.github.io/News-APP/](https://shyamkumarnagilla.github.io/News-APP/)
 </div>
 
+##  Preview
+
+![Newsly Preview](./screenshots/preview.png)
+
 ---
 Newsly is a modern, responsive Single Page Application (SPA) built with React that delivers real-time news headlines from across the globe. By integrating with the **NewsData.io API**, it allows users to stay updated with the latest stories across various categories.
 
